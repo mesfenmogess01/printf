@@ -1,7 +1,7 @@
 #include "main.h"
 
 /** printf - printf something
- *
+ *@format: print stetment
  * Return: 0
  */
  int _printf(char *format, ...)
