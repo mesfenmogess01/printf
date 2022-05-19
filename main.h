@@ -2,18 +2,20 @@
 #define MAIN_H
 
 /**
- *  * struct structprint - structure containing
- *   * @q: the location and method to translate data to characters.
- *    * @u: print function for specific type.
- *     *
- *      * Return: int
- *       */
+ * struct structprint - structure containing
+ * @q: the location and method to translate data to characters.
+ * @u: print function for specific type.
+ *
+ * Return: int
+ */
 typedef struct structprint
 {
 	char *q;
 	int (*u)(char *format, va_list);
-} structype;
+}
+structype;
 
 int _putchar(char ch);
 int _printf(char *format, ...);
+int (*u)(char *format, va_list);
 #endif
